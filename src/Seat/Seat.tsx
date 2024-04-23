@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SeatContainer } from './SeatStyles';
 import CheckIcon from '../../public/check.svg';
 
 interface SeatProps {
-  section: string;
+  // section: string;
   row: string;
   number: number;
-  price: number;
+  // price: number;
 }
 
-function Seat({ section, row, number, price }: SeatProps) {
+function Seat({ row, number }: SeatProps) {
   const [isSelected, setIsSelected] = useState(false);
 
   const handleClick = () => {
